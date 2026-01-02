@@ -1,4 +1,4 @@
-app = "rsshub"
+app = "fly-io-rsshub"
 
 [build]
 image = "diygod/rsshub:latest"
