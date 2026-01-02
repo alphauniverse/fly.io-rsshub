@@ -2,11 +2,11 @@ app = "fly-io-rsshub"
 swap_size_mb = 512
 
 [env]
-TZ = Asia/Sahnghai
-ACCESS_KEY = 9yrKXe6V3h
-DEBUG_INFO = false
-LOGGER_LEVEL = warning
-NO_LOGFILES = false
+TZ="Asia/Sahnghai"
+ACCESS_KEY=9yrKXe6V3h
+DEBUG_INFO=false
+LOGGER_LEVEL=warning
+NO_LOGFILES=false
 
 [build]
 image = "diygod/rsshub:latest"
