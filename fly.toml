@@ -2,21 +2,21 @@ app = "fly-io-rsshub"
 swap_size_mb = 512
 
 [env]
-TZ="Asia/Sahnghai"
-ACCESS_KEY=9yrKXe6V3h
-DEBUG_INFO=false
-LOGGER_LEVEL=warning
-NO_LOGFILES=false
+  TZ = "Asia/Sahnghai"
+  ACCESS_KEY = "9yrKXe6V3h"
+  DEBUG_INFO = "false"
+  LOGGER_LEVEL = "warning"
+  NO_LOGFILES = "false"
 
 [build]
-image = "diygod/rsshub:latest"
+  image = "diygod/rsshub:latest"
 
 [http_service]
-internal_port = 1200
-force_https = true
-auto_stop_machines = "suspend"
-auto_start_machines = true
-min_machines_running = 1
+  internal_port = 1200
+  force_https = true
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 1
 
 [http_service.tls_options]
   alpn = ["h2", "http/1.1"]
@@ -24,8 +24,8 @@ min_machines_running = 1
   default_self_signed = false
 
 [[http_service.checks]]
-grace_period = "10s"
-interval = "30s"
-method = "GET"
-timeout = "5s"
-path = "/healthz"
+  grace_period = "10s"
+  interval = "30s"
+  method = "GET"
+  timeout = "5s"
+  path = "/healthz?key=9yrKXe6V3h"
